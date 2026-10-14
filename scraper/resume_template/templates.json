@@ -1,0 +1,939 @@
+[
+  {
+    "source_id": 1000,
+    "title": "简约大气的简历模板",
+    "style_tags": [
+      "左右分栏",
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 22791,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1000.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1000",
+    "local_image_path": "images/1000.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1001,
+    "title": "表格个人简历模板",
+    "style_tags": [
+      "表格"
+    ],
+    "category_slug": "热门",
+    "usage_count": 23782,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1001.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1001",
+    "local_image_path": "images/1001.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1002,
+    "title": "经典蓝色商务简历模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 25435,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1002.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1002",
+    "local_image_path": "images/1002.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1003,
+    "title": "线条简约风简历模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 24715,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1003.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1003",
+    "local_image_path": "images/1003.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1004,
+    "title": "热门经典分栏简历模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 28812,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1004.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1004",
+    "local_image_path": "images/1004.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1005,
+    "title": "蓝色线条个人简历模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 26764,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1005.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1005",
+    "local_image_path": "images/1005.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1006,
+    "title": "时尚大气的简洁线条模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 24617,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1006.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1006",
+    "local_image_path": "images/1006.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1007,
+    "title": "分栏式简约风简历模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 24526,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1007.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1007",
+    "local_image_path": "images/1007.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1008,
+    "title": "绿色左右分栏简历模板",
+    "style_tags": [
+      "左右分栏",
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 26014,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1008.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1008",
+    "local_image_path": "images/1008.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1009,
+    "title": "高端左右分栏简历模板",
+    "style_tags": [
+      "左右分栏",
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 23231,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1009.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1009",
+    "local_image_path": "images/1009.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1010,
+    "title": "经典左右结构简历模板",
+    "style_tags": [
+      "左右分栏",
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 22771,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1010.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1010",
+    "local_image_path": "images/1010.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1011,
+    "title": "时尚前卫的通用简历模板",
+    "style_tags": [
+      "工作",
+      "左右分栏",
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 26169,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1011.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1011",
+    "local_image_path": "images/1011.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1012,
+    "title": "经典上下结构简历模板",
+    "style_tags": [
+      "时尚",
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 26826,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1012.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1012",
+    "local_image_path": "images/1012.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1013,
+    "title": "时尚超简约风简历模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 24424,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1013.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1013",
+    "local_image_path": "images/1013.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1014,
+    "title": "线条风上下分栏简历模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 24801,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1014.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1014",
+    "local_image_path": "images/1014.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1015,
+    "title": "人气蓝色左右结构模板",
+    "style_tags": [
+      "左右分栏",
+      "时尚",
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 29841,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1015.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1015",
+    "local_image_path": "images/1015.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1016,
+    "title": "简约线条上下结构模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 25828,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1016.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1016",
+    "local_image_path": "images/1016.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1017,
+    "title": "线条分栏式个人简历模板",
+    "style_tags": [
+      "时尚",
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 21975,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1017.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1017",
+    "local_image_path": "images/1017.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1018,
+    "title": "左右结构的商务招聘模板",
+    "style_tags": [
+      "左右分栏",
+      "时尚",
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 23731,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1018.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1018",
+    "local_image_path": "images/1018.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1019,
+    "title": "线条风格的上下分栏模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 26354,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1019.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1019",
+    "local_image_path": "images/1019.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1020,
+    "title": "时间轴个人简历模板",
+    "style_tags": [
+      "左右分栏",
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 25725,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1020.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1020",
+    "local_image_path": "images/1020.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1021,
+    "title": "时间轴经典简历模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 24624,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1021.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1021",
+    "local_image_path": "images/1021.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1022,
+    "title": "绿色时尚个人简历模板",
+    "style_tags": [
+      "左右分栏",
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 25588,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1022.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1022",
+    "local_image_path": "images/1022.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1023,
+    "title": "精美简洁的求职简历模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 25925,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1023.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1023",
+    "local_image_path": "images/1023.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1024,
+    "title": "简洁求职简历模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 24311,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1024.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1024",
+    "local_image_path": "images/1024.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1025,
+    "title": "左右分栏线条风简历模板",
+    "style_tags": [
+      "左右分栏",
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 24664,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1025.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1025",
+    "local_image_path": "images/1025.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1026,
+    "title": "时间轴简约风简历模板",
+    "style_tags": [
+      "左右分栏",
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 23304,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1026.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1026",
+    "local_image_path": "images/1026.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1027,
+    "title": "深蓝色线条求职简历模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 24725,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1027.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1027",
+    "local_image_path": "images/1027.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1028,
+    "title": "时尚简约风的简历模板",
+    "style_tags": [
+      "左右分栏",
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 23831,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1028.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1028",
+    "local_image_path": "images/1028.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1029,
+    "title": "可爱的线条个人简历模板",
+    "style_tags": [
+      "时尚",
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 24512,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1029.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1029",
+    "local_image_path": "images/1029.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1030,
+    "title": "绿色左右分栏式简历模板",
+    "style_tags": [
+      "左右分栏",
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 24752,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1030.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1030",
+    "local_image_path": "images/1030.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1031,
+    "title": "简约风的求职简历模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 24431,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1031.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1031",
+    "local_image_path": "images/1031.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1032,
+    "title": "极简风格的线条简历模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 24716,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1032.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1032",
+    "local_image_path": "images/1032.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1033,
+    "title": "极简风的橙色线条模板",
+    "style_tags": [
+      "简洁",
+      "线条"
+    ],
+    "category_slug": "热门",
+    "usage_count": 25657,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1033.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1033",
+    "local_image_path": "images/1033.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1034,
+    "title": "时尚时间轴左右结构模板",
+    "style_tags": [
+      "创意",
+      "工作",
+      "左右分栏",
+      "时尚",
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 25886,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1034.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1034",
+    "local_image_path": "images/1034.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1035,
+    "title": "简洁线条个人简历模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 25914,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1035.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1035",
+    "local_image_path": "images/1035.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1036,
+    "title": "时尚简单的简历模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 24655,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1036.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1036",
+    "local_image_path": "images/1036.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1037,
+    "title": "蓝色线条求职简历模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 24705,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1037.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1037",
+    "local_image_path": "images/1037.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1038,
+    "title": "经典的线条简历模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 25224,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1038.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1038",
+    "local_image_path": "images/1038.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1039,
+    "title": "线条风稳重大气简历模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 25325,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1039.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1039",
+    "local_image_path": "images/1039.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1040,
+    "title": "简单淡蓝色个人简历模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 25718,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1040.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1040",
+    "local_image_path": "images/1040.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1041,
+    "title": "经典左右分栏简历模板",
+    "style_tags": [
+      "左右分栏",
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 25949,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1041.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1041",
+    "local_image_path": "images/1041.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1042,
+    "title": "灰色系左右分栏简历模板",
+    "style_tags": [
+      "左右分栏",
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 25077,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1042.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1042",
+    "local_image_path": "images/1042.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1043,
+    "title": "清新风简约个人简历模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 25327,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1043.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1043",
+    "local_image_path": "images/1043.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1044,
+    "title": "蓝色系简约求职简历模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 27351,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1044.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1044",
+    "local_image_path": "images/1044.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1045,
+    "title": "黑色极简线条简历模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 35914,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1045.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1045",
+    "local_image_path": "images/1045.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1046,
+    "title": "淡蓝色上下结构模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 26655,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1046.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1046",
+    "local_image_path": "images/1046.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1047,
+    "title": "淡蓝色上下结构模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 25080,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1047.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1047",
+    "local_image_path": "images/1047.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1048,
+    "title": "淡蓝色上下结构模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 24692,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1048.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1048",
+    "local_image_path": "images/1048.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1049,
+    "title": "淡蓝色上下结构模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 24615,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1049.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1049",
+    "local_image_path": "images/1049.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1050,
+    "title": "淡蓝色上下结构模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 25465,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1050.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1050",
+    "local_image_path": "images/1050.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1051,
+    "title": "淡蓝色上下结构模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 25292,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1051.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1051",
+    "local_image_path": "images/1051.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1052,
+    "title": "淡蓝色上下结构模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 24281,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1052.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1052",
+    "local_image_path": "images/1052.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1053,
+    "title": "淡蓝色上下结构模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 24905,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1053.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1053",
+    "local_image_path": "images/1053.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1054,
+    "title": "淡蓝色上下结构模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 27214,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1054.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1054",
+    "local_image_path": "images/1054.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1055,
+    "title": "淡蓝色上下结构模板",
+    "style_tags": [
+      "简洁",
+      "表格"
+    ],
+    "category_slug": "热门",
+    "usage_count": 25615,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1055.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1055",
+    "local_image_path": "images/1055.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1056,
+    "title": "墨绿色简洁模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 26819,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1056.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1056",
+    "local_image_path": "images/1056.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1057,
+    "title": "时尚卡通贴图风格模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 27161,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1057.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1057",
+    "local_image_path": "images/1057.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 1058,
+    "title": "绿色大自然风格模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "热门",
+    "usage_count": 26961,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/1058.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/1058",
+    "local_image_path": "images/1058.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 2000,
+    "title": "清新成长型幼/小/初简历模板",
+    "style_tags": [
+      "简洁"
+    ],
+    "category_slug": "中/小学生",
+    "usage_count": 12953,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/2000.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/student/2000",
+    "local_image_path": "images/2000.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 2001,
+    "title": "卡通童趣型幼升小简历模板",
+    "style_tags": [
+      "卡通"
+    ],
+    "category_slug": "中/小学生",
+    "usage_count": 11773,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/2001.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/student/2001",
+    "local_image_path": "images/2001.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 2002,
+    "title": "创意手账型卡通学生简历模板",
+    "style_tags": [
+      "创意卡通"
+    ],
+    "category_slug": "中/小学生",
+    "usage_count": 11613,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/2002.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/student/2002",
+    "local_image_path": "images/2002.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 2003,
+    "title": "森林绘本型自然卡通学生简历模板",
+    "style_tags": [
+      "森林绘本"
+    ],
+    "category_slug": "中/小学生",
+    "usage_count": 11553,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/2003.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/student/2003",
+    "local_image_path": "images/2003.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 2004,
+    "title": "阳光草地型卡通学生简历模板",
+    "style_tags": [
+      "树木草地"
+    ],
+    "category_slug": "中/小学生",
+    "usage_count": 11483,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/2004.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/student/2004",
+    "local_image_path": "images/2004.png",
+    "word_download_url": null,
+    "word_local_path": null
+  },
+  {
+    "source_id": 2005,
+    "title": "粉色气球型梦幻卡通学生简历模板",
+    "style_tags": [
+      "粉色气球"
+    ],
+    "category_slug": "中/小学生",
+    "usage_count": 11673,
+    "cover_url": "https://pic.qmjianli.com/img/resume/template/online/2005.png",
+    "detail_url": "https://www.qmjianli.com/cv/details/student/2005",
+    "local_image_path": "images/2005.png",
+    "word_download_url": null,
+    "word_local_path": null
+  }
+]

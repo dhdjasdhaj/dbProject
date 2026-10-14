@@ -1,0 +1,15 @@
+.git
+.idea
+.gradle
+**/build
+**/node_modules
+**/dist
+.env
+.env.*
+*.log
+.superpowers
+verification
+*.dump
+tmp
+output
+.deployment

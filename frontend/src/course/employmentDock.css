@@ -1,0 +1,89 @@
+.employment-dock-host {
+  --employment-dock-top: 112px;
+  --employment-rail-width: clamp(224px, 19vw, 272px);
+  color: #244f70;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.employment-sidebar.employment-floating-dock {
+  position: fixed;
+  z-index: 65;
+  top: var(--employment-dock-top);
+  left: calc(max(0px, (100vw - 1920px) / 2) + clamp(16px, 3vw, 72px));
+  width: var(--employment-rail-width);
+  max-height: calc(100dvh - var(--employment-dock-top) - 20px);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 14px 16px;
+  overflow: hidden;
+  isolation: isolate;
+  border: 1px solid #e8f7ffb8;
+  border-radius: 25px;
+  background: linear-gradient(145deg, #edf9ffe6, #d2eaffd9 55%, #cde7ffde);
+  box-shadow: 0 22px 60px #103f8736, 0 5px 16px #1555a21a, inset 0 1px 0 #ffffffed, inset 0 -1px 0 #d4efff80;
+  backdrop-filter: blur(28px) saturate(145%);
+  -webkit-backdrop-filter: blur(28px) saturate(145%);
+  transform-origin: top left;
+}
+.employment-dock-glow {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse at 0 0, #ffffffc7, transparent 55%), radial-gradient(ellipse at 100% 80%, #a4ccff52, transparent 65%);
+}
+.employment-floating-dock .employment-sidebar-brand { display: flex; flex-shrink: 0; gap: 10px; align-items: center; padding: 4px 6px 18px; color: #24618e; }
+.employment-floating-dock .employment-sidebar-brand>div { min-width: 0; }
+.employment-floating-dock .employment-sidebar-brand strong { display: block; font-size: clamp(16px, 1.2vw, 18px); font-weight: 700; white-space: nowrap; }
+.employment-floating-dock .employment-sidebar-brand small { display: block; font-size: 9px; letter-spacing: .09em; color: #658aaa; }
+.employment-dock-mark { display: grid; place-items: center; flex: 0 0 38px; height: 38px; border: 1px solid #ffffffa6; border-radius: 12px; background: #ffffff59; box-shadow: inset 0 1px 0 #fff8; }
+.employment-floating-dock .employment-dock-nav { position: relative; display: grid; flex: 0 1 auto; min-height: 0; gap: 5px; overflow-y: auto; overflow-x: hidden; padding: 7px 7px 9px; margin-inline: -2px; scrollbar-width: thin; scrollbar-color: #85b8d98c transparent; }
+.employment-floating-dock .employment-dock-link {
+  --rail-grow: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-shrink: 0;
+  min-height: 45px;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  border-radius: 13px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #2f5776;
+  transform: translateX(calc(var(--rail-grow) * 2px)) scale(calc(1 + var(--rail-grow) * .018));
+  transform-origin: center;
+  transition: background .2s, color .2s, border-color .2s;
+}
+.employment-floating-dock .employment-dock-link svg { flex: 0 0 17px; opacity: .7; }
+.employment-floating-dock .employment-dock-link:hover:not(.selected) { background: #ffffff70; border-color: #ffffff75; }
+.employment-floating-dock .employment-dock-link.selected { color: #fff; background: linear-gradient(115deg, #1388d0, #2379ca); border-color: #60b8ef70; box-shadow: 0 6px 16px #1779c42e, inset 0 1px 0 #ffffff35; }
+.employment-floating-dock .employment-dock-link.selected svg { opacity: 1; }
+.employment-floating-dock a:focus-visible, .employment-floating-dock button:focus-visible, .employment-dock-toggle:focus-visible { outline: 2px solid #1286c8; outline-offset: -3px; }
+.employment-dock-footer { flex-shrink: 0; margin: 11px 6px 0; padding-top: 15px; border-top: 1px solid #accfe780; }
+.employment-floating-dock .employment-template-link { display: flex; align-items: center; gap: 9px; border: 0; margin: 0; padding: 6px 6px; border-radius: 10px; font-size: 14px; }
+.employment-floating-dock .employment-template-link svg:last-child { margin-left: auto; opacity: .65; }
+.employment-floating-dock .employment-template-link:hover { background: #ffffff70; }
+.employment-floating-dock .employment-sidebar-note { display: block; font-size: 12px; color: #6585a0; margin: 9px 0 0; padding: 0 6px; }
+.employment-dock-pending { padding: 16px 8px; font-size: 13px; color: #6486a2; }
+.employment-dock-close, .employment-dock-toggle, .employment-dock-backdrop { font: inherit; cursor: pointer; }
+.employment-dock-close { display: grid; place-items: center; flex: 0 0 30px; height: 30px; margin-left: auto; border: 1px solid #bddbf0; border-radius: 9px; color: #346581; background: #ffffff70; }
+.employment-dock-backdrop { position: fixed; z-index: 64; inset: var(--employment-dock-top) 0 0; border: 0; background: #0b397634; backdrop-filter: blur(3px); }
+.employment-dock-toggle { position: fixed; z-index: 66; left: 16px; bottom: calc(16px + env(safe-area-inset-bottom)); display: inline-flex; align-items: center; gap: 9px; min-height: 45px; padding: 10px 15px; border: 1px solid #dff6ffbd; border-radius: 15px; color: #245775; background: #e9f7ffe8; box-shadow: 0 12px 32px #113f873d, inset 0 1px 0 #fff; backdrop-filter: blur(22px); }
+.employment-dock-toggle-dot { width: 6px; height: 6px; border-radius: 50%; background: #2c98d4; }
+@media (max-width: 900px) {
+  .employment-sidebar.employment-floating-dock { top: auto; bottom: calc(78px + env(safe-area-inset-bottom)); left: 16px; width: min(320px, calc(100vw - 32px)); max-height: calc(100dvh - var(--employment-dock-top) - 94px - env(safe-area-inset-bottom)); padding: 16px 12px 14px; border-radius: 23px; transform-origin: bottom left; }
+  .employment-floating-dock .employment-sidebar-brand { padding-bottom: 12px; gap: 8px; }
+  .employment-floating-dock .employment-sidebar-brand strong { font-size: 16px; }
+  .employment-floating-dock .employment-dock-nav { display: grid; padding: 6px; overflow-y: auto; }
+  .employment-floating-dock .employment-dock-link { min-height: 42px; white-space: normal; font-size: 14px; padding: 8px 11px; transform: none; }
+  .employment-floating-dock .employment-dock-link svg { display: block; }
+  .employment-dock-footer { margin-top: 8px; padding-top: 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .employment-floating-dock .employment-dock-link { transform: none; transition: none; }
+}
+@media print {
+  .employment-dock-host { display: none !important; }
+}

@@ -1,0 +1,20 @@
+#
+# https://help.github.com/articles/dealing-with-line-endings/
+#
+# Linux start script should use lf
+/gradlew        text eol=lf
+
+# These are Windows script files and should use crlf
+*.bat           text eol=crlf
+
+# Preserve binary resources byte-for-byte across Windows/Linux checkouts.
+*.pdf           binary
+*.docx          binary
+*.png           binary
+*.jpg           binary
+*.jpeg          binary
+*.gif           binary
+*.woff          binary
+*.woff2         binary
+*.jar           binary
+

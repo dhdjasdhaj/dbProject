@@ -1,0 +1,17 @@
+# Used by deploy-employment.ps1 after compiling current sources locally.
+# The build context contains only jars, web assets and the Nginx configuration.
+FROM eclipse-temurin:21-jre AS course-runtime
+WORKDIR /app
+COPY course.jar app.jar
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "app.jar"]
+FROM eclipse-temurin:21-jre AS legacy-runtime
+WORKDIR /app
+COPY legacy.jar app.jar
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "app.jar"]
+FROM nginx:alpine AS web-runtime
+COPY web/ /usr/share/nginx/html/
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]

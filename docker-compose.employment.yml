@@ -1,0 +1,55 @@
+# Employment definitions are imported by docker-compose.override.yml by default.
+# Explicitly merging all three files remains supported for older commands.
+services:
+  course-mysql:
+    image: mysql:8.4
+    container_name: interview-submit-course-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: employment_course
+      MYSQL_USER: employment
+      MYSQL_PASSWORD: ${COURSE_MYSQL_PASSWORD:?Configure COURSE_MYSQL_PASSWORD in .env}
+      MYSQL_ROOT_PASSWORD: ${COURSE_MYSQL_ROOT_PASSWORD:?Configure COURSE_MYSQL_ROOT_PASSWORD in .env}
+      TZ: UTC
+    command: ["--character-set-server=utf8mb4", "--collation-server=utf8mb4_0900_as_cs"]
+    ports:
+      - "127.0.0.1:13308:3306"
+    volumes:
+      - employment_mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 --silent"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 40s
+  course-app:
+    build:
+      context: .
+      dockerfile: course-app/Dockerfile
+    container_name: interview-submit-course-app
+    restart: unless-stopped
+    environment:
+      COURSE_MYSQL_HOST: course-mysql
+      COURSE_MYSQL_PORT: 3306
+      COURSE_MYSQL_DB: employment_course
+      COURSE_MYSQL_USER: employment
+      COURSE_MYSQL_PASSWORD: ${COURSE_MYSQL_PASSWORD}
+      COURSE_AUTH_BASE_URL: http://app:8080
+      COURSE_STORAGE_ENDPOINT: http://minio:9000
+      COURSE_STORAGE_ACCESS_KEY: ${COURSE_STORAGE_ACCESS_KEY:-minioadmin}
+      COURSE_STORAGE_SECRET_KEY: ${COURSE_STORAGE_SECRET_KEY:-minioadmin}
+      COURSE_STORAGE_BUCKET: employment-course
+      TZ: UTC
+    depends_on:
+      course-mysql:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:18184:8080"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:8080/api/course/health | grep -q '\"status\":\"UP\"'"]
+      start_period: 30s
+      interval: 15s
+      timeout: 5s
+      retries: 5
+volumes:
+  employment_mysql_data:

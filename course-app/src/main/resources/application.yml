@@ -1,0 +1,30 @@
+server:
+  port: ${COURSE_PORT:8080}
+spring:
+  application:
+    name: employment-course
+  datasource:
+    url: jdbc:mysql://${COURSE_MYSQL_HOST:localhost}:${COURSE_MYSQL_PORT:13308}/${COURSE_MYSQL_DB:employment_course}?connectionTimeZone=UTC&forceConnectionTimeZoneToSession=true
+    username: ${COURSE_MYSQL_USER:employment}
+    password: ${COURSE_MYSQL_PASSWORD}
+    hikari:
+      maximum-pool-size: 10
+  flyway:
+    enabled: true
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 11MB
+course:
+  auth-base-url: ${COURSE_AUTH_BASE_URL:http://localhost:18182}
+  storage-endpoint: ${COURSE_STORAGE_ENDPOINT:http://localhost:19004}
+  storage-access-key: ${COURSE_STORAGE_ACCESS_KEY}
+  storage-secret-key: ${COURSE_STORAGE_SECRET_KEY}
+  storage-bucket: ${COURSE_STORAGE_BUCKET:employment-course}
+logging:
+  level:
+    org.hibernate.orm.jdbc.warn: ERROR

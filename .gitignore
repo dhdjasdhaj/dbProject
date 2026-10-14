@@ -1,0 +1,49 @@
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
+/.claude
+/.idea
+/app/bin
+# Environment variables
+.env
+# IDEA code analysis
+qodana.yaml
+
+app/src/main/resources/application-dev.yml
+
+# Local temporary patches / assistant artifacts
+.tmp_*.py
+.cursor_gitlog_*.txt
+.cursor_gitrev_*.txt
+.cursor_gitstatus_*.txt
+
+# Common local archives / docs artifacts
+*.zip
+
+# Accidental root-level static build artifacts
+/*.css
+/air_home.html
+/package-lock.json
+
+
+# Local acceptance screenshots and reports
+/verification/
+# Python generator cache
+__pycache__/
+.env.*
+!.env.example
+*.log
+/.deployment/
+
+# Generated report copies, renderings and local database/file backups
+/output/
+/tmp/
+/backups/
+/data/
+*.dump
+*.sql.gz
+*.backup
+*.bak
+/templates-api-raw.json

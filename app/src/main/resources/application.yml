@@ -1,0 +1,149 @@
+# AI Interview Platform Configuration
+# 智能AI面试官平台配置
+
+server:
+  port: 8080
+
+# SpringDoc OpenAPI / Swagger配置
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+  api-docs:
+    path: /v3/api-docs
+  packages-to-scan: interview.guide.modules
+
+spring:
+  config:
+    import: optional:file:.env[.properties],optional:file:../.env[.properties]
+  application:
+    name: ai-interview-platform
+
+  # 启用虚拟线程 (Java 21+)
+  # 显著提升 I/O 密集型场景的并发能力，特别适合 AI 调用和 SSE 长连接
+  threads:
+    virtual:
+      enabled: true
+
+  # PostgreSQL数据库配置
+  datasource:
+    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:${POSTGRES_PORT:5432}/${POSTGRES_DB:interview_guide}
+    username: ${POSTGRES_USER:postgres}
+    password: ${POSTGRES_PASSWORD:123456}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update #首次启动用 create，表创建成功后，改回 update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: -1
+      max-request-size: -1
+  
+
+  # Redisson配置 (使用 spring.redis.redisson，参考官方文档)
+  redis:
+    redisson:
+      config: |
+        singleServerConfig:
+          address: "redis://${REDIS_HOST:localhost}:${REDIS_PORT:6379}"
+          database: 0
+          connectionMinimumIdleSize: 10
+          connectionPoolSize: 64
+          subscriptionConnectionMinimumIdleSize: 1
+          subscriptionConnectionPoolSize: 50
+  
+  # Spring AI - OpenAI 兼容接口（可切换 Gemini / DashScope 等）
+  ai:
+    openai:
+      # Gemini OpenAI 兼容端点示例：
+      # https://generativelanguage.googleapis.com/v1beta/openai
+      # 如需切回百炼：设置 AI_BASE_URL=https://dashscope.aliyuncs.com/compatible-mode
+      base-url: ${AI_BASE_URL:https://generativelanguage.googleapis.com/v1beta/openai}
+      # 优先读取通用 AI_API_KEY，其次 Gemini Key，最后回退百炼 Key
+      api-key: ${AI_API_KEY:${AI_GEMINI_API_KEY:${AI_BAILIAN_API_KEY:}}}
+      chat:
+        options:
+          # Gemini 默认模型（更稳的在线可用版本）
+          model: ${AI_MODEL:gemini-2.0-flash}
+          temperature: 0.2
+      # Embedding模型配置 - 使用text-embedding-v3
+      embedding:
+        options:
+          model: text-embedding-v3
+    # 禁用自动重试机制，让异常立即返回
+    retry:
+      max-attempts: 1  # 不重试，失败立即返回
+      on-client-errors: false
+    # PostgreSQL Vector Store配置
+    vectorstore:
+      pgvector:
+        index-type: HNSW
+        distance-type: COSINE_DISTANCE
+        dimensions: 1024  # text-embedding-v3实际生成的向量维度
+        initialize-schema: true # 开发环境设置为 true，方便快速启动。生产环境设置为 false，手动管理数据库 schema，避免意外变更。
+        remove-existing-vector-store-table: false  # 保留现有表和数据
+
+# Application custom configuration
+app:
+  ai:
+    # 结构化输出重试次数（用于 BeanOutputConverter 解析失败时的业务层重试）
+    structured-max-attempts: ${APP_AI_STRUCTURED_MAX_ATTEMPTS:2}
+    # 重试时是否将上次错误原因注入提示词，帮助模型定向修复输出
+    structured-include-last-error: ${APP_AI_STRUCTURED_INCLUDE_LAST_ERROR:true}
+    fallback:
+      openrouter-enabled: ${APP_AI_FALLBACK_OPENROUTER_ENABLED:true}
+    rag:
+      rewrite:
+        enabled: ${APP_AI_RAG_REWRITE_ENABLED:true}
+      search:
+        short-query-length: ${APP_AI_RAG_SHORT_QUERY_LENGTH:4}
+        topk-short: ${APP_AI_RAG_TOPK_SHORT:20}
+        topk-medium: ${APP_AI_RAG_TOPK_MEDIUM:12}
+        topk-long: ${APP_AI_RAG_TOPK_LONG:8}
+        min-score-short: ${APP_AI_RAG_MIN_SCORE_SHORT:0.18}
+        min-score-default: ${APP_AI_RAG_MIN_SCORE_DEFAULT:0.28}
+  interview:
+    follow-up-count: ${APP_INTERVIEW_FOLLOW_UP_COUNT:1}
+    media:
+      transcription-enabled: ${APP_INTERVIEW_MEDIA_TRANSCRIPTION_ENABLED:true}
+      transcription-provider: ${APP_INTERVIEW_MEDIA_TRANSCRIPTION_PROVIDER:deepgram}
+      transcription-url: ${APP_INTERVIEW_MEDIA_TRANSCRIPTION_URL:https://api.deepgram.com/v1/listen}
+      transcription-model: ${APP_INTERVIEW_MEDIA_TRANSCRIPTION_MODEL:nova-2}
+      transcription-api-key: ${APP_INTERVIEW_MEDIA_TRANSCRIPTION_API_KEY:}
+      transcript-refinement-enabled: ${APP_INTERVIEW_MEDIA_TRANSCRIPT_REFINEMENT_ENABLED:true}
+      realtime-allow-direct-key-fallback: ${APP_INTERVIEW_MEDIA_REALTIME_ALLOW_DIRECT_KEY_FALLBACK:false}
+      tts-enabled: ${APP_INTERVIEW_MEDIA_TTS_ENABLED:true}
+      tts-provider: ${APP_INTERVIEW_MEDIA_TTS_PROVIDER:deepgram}
+      tts-url: ${APP_INTERVIEW_MEDIA_TTS_URL:https://api.deepgram.com/v1/speak}
+      tts-api-key: ${APP_INTERVIEW_MEDIA_TTS_API_KEY:}
+      tts-voice-id: ${APP_INTERVIEW_MEDIA_TTS_VOICE_ID:aura-orion-en}
+      tts-voice-id-zh: ${APP_INTERVIEW_MEDIA_TTS_VOICE_ID_ZH:aura-orion-en}
+      tts-language-zh: ${APP_INTERVIEW_MEDIA_TTS_LANGUAGE_ZH:zh-CN}
+    evaluation:
+      batch-size: ${APP_INTERVIEW_EVALUATION_BATCH_SIZE:8}
+      score-friendly-boost: ${APP_INTERVIEW_EVALUATION_SCORE_FRIENDLY_BOOST:6}
+  resume:
+    upload-dir: ${APP_RESUME_UPLOAD_DIR:./data/uploads}
+    allowed-types:
+      - application/pdf
+      - application/msword
+      - application/vnd.openxmlformats-officedocument.wordprocessingml.document
+      - text/plain
+  storage:
+    endpoint: ${APP_STORAGE_ENDPOINT:http://localhost:9000}
+    access-key: ${APP_STORAGE_ACCESS_KEY:rustfsadmin}
+    secret-key: ${APP_STORAGE_SECRET_KEY:rustfsadmin}
+    bucket: ${APP_STORAGE_BUCKET:interview-guide}
+    region: ${APP_STORAGE_REGION:us-east-1}
+
+  cors:
+    allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:5173,http://localhost:5174,http://localhost:80,https://www.nailong88.online,https://nailong88.online}

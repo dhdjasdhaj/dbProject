@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#e4f8f6"/><stop offset="1" stop-color="#c7e7fa"/></linearGradient><linearGradient id="paper" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#f2fcff"/></linearGradient></defs>
+  <rect width="600" height="800" fill="url(#bg)"/>
+  <circle cx="540" cy="70" r="185" fill="#aeece5" opacity=".5"/>
+  <rect x="100" y="125" width="400" height="500" rx="24" fill="#266a85" opacity=".08"/>
+  <rect x="90" y="110" width="400" height="500" rx="24" fill="url(#paper)" stroke="#b9dadf"/>
+  <rect x="90" y="110" width="400" height="14" rx="7" fill="#168d91"/>
+  <rect x="132" y="160" width="68" height="68" rx="18" fill="#e2f5f1"/>
+  <path d="M166 176v36m-18-18h36" stroke="#168d91" stroke-width="10" stroke-linecap="round"/>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+    <text x="132" y="283" fill="#1a5268" font-size="34" font-weight="700">秋招医护类</text>
+    <text x="132" y="334" fill="#1a5268" font-size="34" font-weight="700">求职简历</text>
+    <text x="132" y="378" fill="#548a96" font-size="15" letter-spacing="3">WORD TEMPLATE</text>
+    <path d="M132 427h290m-290 27h250m-250 27h275" stroke="#d8e9eb" stroke-width="9" stroke-linecap="round"/>
+    <rect x="132" y="525" width="128" height="40" rx="20" fill="#168d91"/>
+    <text x="196" y="551" text-anchor="middle" fill="#fff" font-size="17" font-weight="700">.DOCX</text>
+    <text x="300" y="694" text-anchor="middle" fill="#286978" font-size="24" font-weight="700">Word 原文件 · 可编辑</text>
+    <text x="300" y="731" text-anchor="middle" fill="#548a96" font-size="17">点击下载获取完整简历模板</text>
+  </g>
+</svg>
